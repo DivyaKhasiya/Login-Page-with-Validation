@@ -90,6 +90,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       validator: MultiValidator([
                         RequiredValidator(errorText: '*Required'),
                         MinLengthValidator(10, errorText: '10 Minimum Number'),
+                        MaxLengthValidator(10, errorText: '10 Maximum nmber')
                       ]),
                     ),
                     SizedBox(
